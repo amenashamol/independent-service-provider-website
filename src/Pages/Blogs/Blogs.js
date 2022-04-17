@@ -1,27 +1,46 @@
 import React from 'react';
+import './Blogs.css'
 
 const Blogs = () => {
     return (
         <div>
-         <div className='context'>
-                <h2>API Context:</h2>
+         <div className='auth'>
+                <h2> Difference between authorization and authentication:</h2>
                 <p>
-                The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on.
-                It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.
+                In the digital world, authentication and authorization accomplish these same goals. Authentication is used to verify that users really are who they represent themselves to be. Once this has been confirmed, authorization is then used to grant the user permission to access different levels of information and perform specific functions, depending on the rules established for different types of users.Authentication works through passwords, one-time pins, biometric information, and other information provided or entered by the user.Authorization works through settings that are implemented and maintained by the organization.
                 </p>   
             </div>
    
-          <div className='semantic'>
-            <h2> Semantic Tag:</h2>
+          <div className='firebase'>
+            <h2> Firebase Use Cases:</h2>
             <p >
-            Semantic HTML refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages.By adding semantic tags to our document, we provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and it makes web pages more informative and adaptable, allowing browsers and search engines to better interpret conten.
-            </p>   
+            Google Firebase offers many features that pitch it as the go-to backend development tool for web and mobile apps. It reduces development workload and time. And it's a perfect prototyping tool. Firebase is simple, lightweight, friendly, and industrially recognized
+            </p> 
+            <h2> Other options to implement authentication:</h2>
+            <p> Top Alternatives to Firebase Authentication:
+            <li>Cloud Firestore</li>
+                <li> Auth0</li>
+                <li>Amazon Cognito </li> 
+                <li>Passport   </li>
+                <li>MongoDB</li>
+                <li>JSON      </li>
+                <li>Web Token  </li>  
+                <li>Okta </li>  
+               
+              </p>  
           </div> 
 
-           <div className='semantic'>
-            <h2> Semantic Tag:</h2>
+           <div className='firebase-service'>
+            <h2> other services of firebase other than authentication:</h2>
             <p >
-            Semantic HTML refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages.By adding semantic tags to our document, we provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and it makes web pages more informative and adaptable, allowing browsers and search engines to better interpret conten.
+                There are many services which Firebase provides other than authentication, Most useful of them are: 
+                <li>Cloud Firestore</li>
+                <li>Cloud Functions</li>
+                <li>Hosting        </li> 
+                <li>Cloud Storage   </li>
+                <li>Google Analytics</li>
+                <li>Predictions     </li>
+                <li>Cloud Messaging  </li>  
             </p>   
           </div>     
         </div>

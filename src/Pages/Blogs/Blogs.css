@@ -1,17 +1,30 @@
-.context{
-    background-color: rgb(143, 248, 248);
+.auth{
+    background-color:rgb(247, 164, 56);
+    margin-top: 10px;
    
 }
-.context p{
+.auth p{
     padding: 0 25px 25px 25px;
    
 }
 
-.semantic{
-    background-color:rgb(169, 236, 214) ;
+.firebase{
+    background-color: bisque;
    
 }
-.semantic p{
+.firebase p{
     padding: 0 25px 25px 25px;
    
+}
+
+.firebase-service{
+    background-color: rgb(219, 219, 152);
+}
+
+.firebase-service p{
+    padding: 0 25px 25px 25px; 
+}
+
+.firebase-service p li{
+     margin-left: 100px;
 }

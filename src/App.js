@@ -1,6 +1,6 @@
 
 import './App.css';
-import Header from './Pages/Home/Header/Header';
+
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import SignIn from './Pages/Login/Sing In/SignIn';
@@ -8,6 +8,8 @@ import Services from './Pages/Services/Services';
 import Blogs from './Pages/Blogs/Blogs';
 import About from './Pages/About/Shared/About/About';
 import NotFound from './Pages/About/Shared/NotFound/NotFound';
+import Header from './Pages/About/Shared/Header/Header';
+import SignUp from './Pages/Login/SignUp/SignUp';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
      

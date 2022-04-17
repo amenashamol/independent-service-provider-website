@@ -12,18 +12,17 @@ const Header = () => {
         <>
  
   
- <Navbar collapseOnSelect expand="lg" bg="info" variant="light">
+ <Navbar collapseOnSelect expand="lg" bg="info" variant="light" sticky="top">
   <Container>
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/">React-Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     
     <Nav className="ms-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#about">About</Nav.Link>
-      <Nav.Link href="#services">Services</Nav.Link>
-      <Nav.Link href="#blogs">Blogs</Nav.Link>
-      <Nav.Link href="#signin">Sign In</Nav.Link>
+      <Nav.Link href="home#services">Services</Nav.Link>
+      <Nav.Link as={Link} to="/about">About</Nav.Link>
+      <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+      <Nav.Link as={Link} to="/signin">SignIn</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
