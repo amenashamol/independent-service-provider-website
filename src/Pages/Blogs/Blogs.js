@@ -1,7 +1,6 @@
 import React from 'react';
-import './Service.css'
 
-const Service = () => {
+const Blogs = () => {
     return (
         <div>
             
@@ -9,4 +8,4 @@ const Service = () => {
     );
 };
 
-export default Service;
+export default Blogs;
