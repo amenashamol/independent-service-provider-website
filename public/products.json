@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "category": "first",
+    "name": "Graphics",
+    "seller": "Addid",
+    "price": 3000,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3725,
+    "img": "https://ibb.co/LzrYn9b/",
+    "shipping": 1,
+    "quantity": 0
+  },
+  {
+    "id": "2",
+    "category": "second",
+    "name": "Web Development",
+    "seller": "Addidas",
+    "price": 6000,
+    "stock": 19,
+    "ratings": 5,
+    "ratingsCount": 4355,
+    "img": "https://ibb.co/6tT0J9q",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+    "id": "3",
+    "category": "Third",
+    "name": "Networking",
+    "seller": "Addidas",
+    "price": 4000,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3972,
+    "img": "https://ibb.co/ZcLHd06",
+    "shipping": 1,
+    "quantity": 0
+  },
+  {
+    "id": "4",
+    "category": "Forth",
+    "name": "database",
+    "seller": "Addidas",
+    "price": 3000,
+    "stock": 10,
+    "ratings": 5,
+    "ratingsCount": 1764,
+    "img": "https://ibb.co/vwCJGQ0",
+    "shipping": 32,
+    "quantity": 0
+  }
+  
+
+]

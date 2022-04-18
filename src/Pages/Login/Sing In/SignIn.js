@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './SignIn.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const SignIn = () => {
+    const navigate= useNavigate()
     const [userInfo,setUserInfo]=useState({
         email:"",
         password:"",
@@ -62,6 +64,32 @@ const SignIn = () => {
         signInWithEmailAndPassword(userInfo.email,userInfo.password)
         console.log(userInfo.email, userInfo.password)
     }
+    
+    
+
+    const location=useLocation()
+    const from= location.state?.from?.pathname || "/"
+     useEffect(() => {
+        
+    if(user){
+        navigate(from)
+
+    }
+        
+    }, [user])
+
+
+    const resetPassword= async()=>{
+        const email=userInfo.email
+        if(email){
+            await sendPasswordResetEmail(email)
+            toast('send email')
+        }
+
+        else{
+            toast('pls enter yur email address')
+        }
+}
     return (
         <div className='login-container'>
              <div className='login-title'>signIn</div>
@@ -75,6 +103,7 @@ const SignIn = () => {
             {/* {<p className='error-message'>{hookError?.message}</p>} */}
             <ToastContainer  />
             <p>dont have an account? <Link to="/signup">  <span >Sign Up first</span> </Link> </p>
+            <p>Forget passsword ? <button  onClick={resetPassword} className='btn btn-link text-white pe-auto text-decoration-none' >Reset password</button></p>
             </form>
             <SocialLogin></SocialLogin>
         </div>

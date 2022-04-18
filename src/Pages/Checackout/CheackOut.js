@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../firebase.init';
+import auth from '../../firebase.init';
+
 
 
 
@@ -43,33 +44,24 @@ const CheackOut = () => {
     }
 
     return (
-        <div className='form-container'>
+        <div className='login-container'>
             
             <div>
-                <h2 className='form-title'>cheaking Information</h2>
+                <h2 className='login-title'>cheaking Information</h2>
 
-                <form onSubmit={handleCreateUser}>
-                    <div className='input-group'>
-                        <label htmlFor='email'>Name </label>
-                        <input onBlur={handleNameBlur} type='eamil' name='email' id='' required/>
-                    </div>
-                    <div className='input-group'>
-                        <label htmlFor='email'>Email </label>
-                        <input value={user?.email} readOnly type='eamil' name='email' id='' required/>
-                    </div>
-
-                    <div className='input-group'>
-                        <label htmlFor='adress'>Address </label>
-                        <input onBlur={handleAddressBlur} type='text' name='address' id='' required/>
-                    </div>
+                <form className='login-form' onSubmit={handleCreateUser}>
                     
-                    <div className='input-group'>
-                        <label htmlFor='phone'>Phone </label>
-                        <input onBlur={handlePhoneBlur} type='text' name='phone' id='' required/>
-                    </div>
+                        <input onBlur={handleNameBlur} type='text' name='name' id='' placeholder='your name'  required/>
+                   
+                        <input value={user?.email} readOnly type='eamil' name='email' id='' required/>
+                   
+                        <input onBlur={handleAddressBlur} type='text' name='address' id='' placeholder='your address' required/>
+                   
+                        <input onBlur={handlePhoneBlur} type='text' name='phone' id='' placeholder='your Phone' required/>
+                        <button>Add Information</button>
                     
                    
-                    <input className='form-submit' type='submit' value='Add Information'/>
+                    
                 </form>
                 
             
