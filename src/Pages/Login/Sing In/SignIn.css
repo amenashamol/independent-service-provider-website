@@ -1,10 +1,10 @@
 .login-container{
     position: relative;
     width: 450px;
-    margin: 3rem auto;
-    height: 508px;
+    margin: 2rem auto;
+    height: 520px;
     border-radius: 20px;
-    padding: 35px;
+    padding: 10px 30px;
     box-sizing: border-box;
     background-color: #ecf2f3;
     box-shadow: 14px 14px 18px #cbc0d3, -14px -14px 20px white;
@@ -14,7 +14,7 @@
     text-align: center;
     margin-top: 5px;
     font-weight: 980;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #1da1f2;
     letter-spacing: 1px;
 
@@ -22,7 +22,7 @@
 
 .login-form{
     text-align: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .login-container label,

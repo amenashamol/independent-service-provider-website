@@ -9,6 +9,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
+    
     const [userInfo,setUserInfo]=useState({
         email:"",
         password:"",
@@ -111,12 +112,14 @@ const SignUp = () => {
                <input type="password" name="password" placeholder='your Password' onBlur={handlePasswordChange} required/>
                {errors?.password && <p className='error-message'>{errors.password}</p>}
                <input type="password" name="conformPassword" placeholder='conform Password' onBlur={handleConformPasswordChange} required/>
+               
+               
+                
                <button>Resister</button>
-            {/* {error && <p className='error-message'>{error}</p>} */}
-            {/* {<p className='error-message'>{hookError?.message}</p>} */}
+                <p>Already have an account ? <Link to='/signin' className='text-primary pe-auto text-decoration-none' >Please login</Link></p>
             <ToastContainer  />
             </form>
-            <p>Already have an account ? <Link to='/login' className='text-primary pe-auto text-decoration-none' >Please login</Link></p>
+            
             
             <SocialLogin></SocialLogin>
         </div>

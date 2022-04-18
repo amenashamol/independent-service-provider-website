@@ -66,9 +66,9 @@ const SignIn = () => {
         <div className='login-container'>
              <div className='login-title'>signIn</div>
            <form className='login-form' onSubmit={handleLogin}>
-               <input type="text" placeholder='your Email' onBlur={handleEmailChange}/>
+               <input type="text" placeholder='your Email' onBlur={handleEmailChange} required/>
                {errors?.email && <p className='error-message'>{errors.email}</p>}
-               <input type="password" placeholder='your Password' onBlur={handlePasswordChange}/>
+               <input type="password" placeholder='your Password' onBlur={handlePasswordChange} required/>
                {errors?.password && <p className='error-message'>{errors.password}</p>}
                <button>SignIn</button>
             {/* {error && <p className='error-message'>{error}</p>} */}
