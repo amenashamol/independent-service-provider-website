@@ -1,5 +1,31 @@
 # Online-IT-Service
+
+# features and functionality
+
 - [] firebase.init
+- [] Routes
+- [] Navber
+- [] SignIn
+- [] SignOut
+- [] SignInWithGoogle
+- [] SignInWithGithub
+- [] ErrorHandleing
+- [] Conform Password
+- [] Reset Password
+- [] Service Page
+- [] About Page
+- [] .env.local 
+- [] -redirect page 
+- [] Toast
+- [] RequiredAuth
+
+
+# technologies (frameworks, libraries)
+- [] react-router
+- [] react-bootstrap
+- [] firebase
+- [] react-firebase-hooks
+- [] bootstrap
 
 
 
