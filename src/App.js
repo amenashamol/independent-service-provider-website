@@ -13,7 +13,7 @@ import SignUp from './Pages/Login/SignUp/SignUp';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Header></Header>
 
       <Routes>

@@ -1,30 +1,52 @@
 .auth{
-    background-color:rgb(247, 164, 56);
+    background-color: rgb(216, 216, 236);
     margin-top: 10px;
    
 }
 .auth p{
-    padding: 0 25px 25px 25px;
+    padding: 0 30px 10px 50px; 
+    
    
 }
 
 .firebase{
     background-color: bisque;
+    margin-bottom: 20px;
+    
    
 }
 .firebase p{
-    padding: 0 25px 25px 25px;
+    padding: 0 30px 3px 50px; 
+    
    
 }
+
+h2 {
+    margin-left: 40px;  
+}
+
+h5 {
+    margin-left: 40px;
+     
+}
+
+.firebase  li{
+    margin-left: 70px;
+   
+
+}
+
+
 
 .firebase-service{
     background-color: rgb(219, 219, 152);
 }
 
 .firebase-service p{
-    padding: 0 25px 25px 25px; 
+    padding: 0 30px 3px 50px; 
+    font-weight: 600;
 }
 
-.firebase-service p li{
-     margin-left: 100px;
+.firebase-service li{
+     margin-left: 70px;
 }

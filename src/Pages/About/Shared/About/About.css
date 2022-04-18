@@ -1,0 +1,33 @@
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+
+.goal {
+    margin-top: 40px;
+    width: 50%;
+    background-color:rgb(240, 240, 250);
+    padding: 15px;
+    
+    
+}
+
+.goal p{
+    font-weight: 500;
+    font-family: Verdana,  Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+
+.photo img{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+h2{
+    margin-left: 10px;
+}
