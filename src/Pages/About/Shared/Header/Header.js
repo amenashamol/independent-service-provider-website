@@ -7,6 +7,8 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 //import auth from '../../../../firebase.init';
 //import { signOut } from 'firebase/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Header.css'
+import CustomLink from '../../../CustomLink/CustomLink';
 
 const Header = () => {
     return (
@@ -22,10 +24,10 @@ const Header = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     
     <Nav className="ms-auto">
-      <Nav.Link href="home#services">Services</Nav.Link>
-      <Nav.Link as={Link} to="/about">About</Nav.Link>
-      <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-      <Nav.Link as={Link} to="/signin">SignIn</Nav.Link>
+      <CustomLink as={Link} to="home#services">Services</CustomLink>
+      <CustomLink as={Link} to="/about">About</CustomLink>
+      <CustomLink as={Link} to="/blogs">Blogs</CustomLink>
+      <CustomLink as={Link} to="/signin">SignIn</CustomLink>
     </Nav>
   </Navbar.Collapse>
   </Container>
